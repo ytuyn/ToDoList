@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>TO DO LIST</title>
+                    <style>
+                               body{
+ font-family: Arial, sans-serif;
+ background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  direction: ltr;
+}   
+
+ .from {
+  background-color: #ededed;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 15px;
+  align-items: center; /* تمنع التمدد وتوسط العناصر عمودياً */
+}
+
+.from .input {
+  flex: 1;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}  
+
+.from .add {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 25px; /* أضفنا بادينج للزر عشان يتناسق طوله مع المربع */
+}
+   .from .add:hover {
+  background-color: #e04e2e;
+}
+.tasks {
+  background-color: #ededed;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; }
+
+  .tasks .task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.tasks .task .delete-btn {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+                    </style>
+</head>
+<body>
+<div class="container">
+
+                    <div class="from">
+                                        <h2>TO DO LIST BABY</h2>
+                                        <input type="text" class="input"/>
+                                        <input type="text" class="add "value="Add Task">
+                    </div>
+                    <div class="tasks">
+                    
+                    </div>
+</div>
+ <script src="script.js"></script>                   
+</body>
+</html>
